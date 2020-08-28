@@ -1,0 +1,50 @@
+ 
+
+.btnShoppingCart {
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 3px #fff;
+  border-radius: 4px; */
+  cursor: pointer;
+  -webkit-box-align: center;
+  align-items: center;
+  display: inline-flex;
+  color: rgb(255, 255, 255);
+  position: relative;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-size: 13px;
+  vertical-align: middle;
+  margin: 0px 0px 0px 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  padding: 8px 11px;
+  border-radius: 4px;
+  background-color: #4eb4f1;
+}
+.count{
+  color: rgb(74, 74, 74);
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 9px;
+    font-size: 12px;
+    font-weight: 700;
+    background: rgb(253, 216, 53);
+    border-radius: 2px;
+    padding: 0px 6px;
+}
+
+.shoppingIcon {
+  /* background-image: url("./images/shopping-cart.svg");
+  background-position: -333px -252px; */
+  width: 19px;
+  height: 18px;
+  margin-right: 6px;
+}
+
