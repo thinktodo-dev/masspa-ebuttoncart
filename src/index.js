@@ -6,13 +6,27 @@ export default class EButtonCartComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      count: 0
+    }
+  }
+  componentDidMount() {
+    this.setState({
+      count: this.props.count
+    })
+  }
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.count !== this.props.count) {
+      this.setState({
+        count: nextProps.count
+      })
     }
   }
   orderAction = () => {
     if(this.props.orderAction) this.props.orderAction()
   }
   render() {
-  let {customButtonStyle, customButtonCountStyle, title, count} = this.props
+  let {customButtonStyle, customButtonCountStyle, title} = this.props
+  let {count}  = this.state 
   return  (
     <button style = {customButtonStyle} className={styles.btnShoppingCart}  onClick = {() => this.orderAction()}>
       <img className={styles.shoppingIcon}   src={ShoppingCartIcon}></img>{title || "Giỏ hàng"} 
