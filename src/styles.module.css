@@ -30,6 +30,9 @@
 .btnShoppingCart {
   outline: none;
 }
+.btnShoppingCart:focus {
+  outline: none;
+}
 .count{
   color: rgb(74, 74, 74);
     height: 20px;
