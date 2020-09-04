@@ -15,7 +15,7 @@ export default class EButtonCartComponent extends React.Component {
     })
   }
   componentWillReceiveProps(nextProps) {
-    if(nextProps.count !== this.props.count) {
+    if(nextProps.count !== this.state.count) {
       this.setState({
         count: nextProps.count
       })
