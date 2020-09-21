@@ -29,7 +29,7 @@ export default class EButtonCartComponent extends React.Component {
   let {count}  = this.state 
   return  (
     <button style = {customButtonStyle} className={styles.btnShoppingCart}  onClick = {() => this.orderAction()}>
-      <img className={styles.shoppingIcon}   src={ShoppingCartIcon}></img>{title || "Giỏ hàng"} 
+      <img className={styles.shoppingIcon}   src={ShoppingCartIcon}></img>{title &&  title} 
       <div  style = {customButtonCountStyle}  className={styles.count}>{count || 0}</div>
     </button>
   )
